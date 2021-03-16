@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng các phương thức trong Array</title>
+</head>
+<body>
+
+//
+<script>
+    let arr1=[1,2,3];
+    let arr2= new Array('t1',"t2");
+    arr1 [1]=5; // phan tu thu 0 la trong, thu 1 la 5
+    console.log(arr1);   //[,5]
+
+    //convert to string;
+    console.log(arr1.toString()); // '1,2,3'
+
+    //convert to string2 with join;
+    console.log(arr1.join('--'));
+
+    //add element at last position;
+    console.log(arr1.push(5)); // tra ve length cua mang
+    console.log(arr1.push('5','b'));
+    console.log(arr1);
+
+    //delete element at last position;
+    console.log(arr1.pop());// tra ve gia tri phan tu bi delete ( dau mang)
+    console.log(arr1);
+
+    //delete element at frist positon;
+    console.log(arr1.shift()); //tra ve gia tri bi delete ( dau mang)
+    console.log(arr1);
+
+    //add element at frist positon:
+    console.log(arr1.unshift(1));// tra ve length cua new arr;
+    console.log(arr1);
+
+    // add from 2 arr to 1 arr;
+    console.log(arr1.concat(arr2));
+
+    //control, delete, add element of arr
+    console.log(arr1.splice(2,1,'replace'));// bat dau tu index 2, delete 1 phan tu, them phan tu replace
+    console.log(arr1);
+
+
+
+</script>
+</body>
+</html>
